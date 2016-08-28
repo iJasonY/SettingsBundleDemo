@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  SettingsBundleDemo
 //
-//  Created by James Tang on 22/10/14.
-//  Copyright (c) 2014 James Tang. All rights reserved.
+//  Created by JasonYan on 22/10/14.
+//  Copyright (c) 2014 JasonYan. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -43,7 +43,7 @@
 
   //这个是用来做条件下发的
   [JSPatch setupUserData:@{ @"userId" : @"10000" }];
-  NSString *kJSPatchAppKey = @"";
+  NSString *kJSPatchAppKey = @"c15ed4b765732ec0";
   [JSPatch startWithAppKey:kJSPatchAppKey];
 
   //用来检测回调的状态，是更新或者是执行脚本之类的，相关信息，会打印在你的控制台
@@ -73,9 +73,9 @@
         }
       }];
 
-  //#ifdef DEBUG
+#ifdef DEBUG
   [JSPatch setupDevelopment];
-  //#endif
+#endif
   [JSPatch sync]; // 每调用一次 +sync 就会请求一次后
 }
 

@@ -2,8 +2,8 @@
 //  AppDelegate.h
 //  SettingsBundleDemo
 //
-//  Created by James Tang on 22/10/14.
-//  Copyright (c) 2014 James Tang. All rights reserved.
+//  Created by JasonYan on 22/10/14.
+//  Copyright (c) 2014 JasonYan. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
