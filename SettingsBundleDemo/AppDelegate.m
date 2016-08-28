@@ -76,7 +76,8 @@
 #ifdef DEBUG
   [JSPatch setupDevelopment];
 #endif
-  [JSPatch sync]; // 每调用一次 +sync 就会请求一次后
+
+  [JSPatch sync]; // 每调用一次 +sync 就会请求一次后台，请求下发最新补丁包，但是新的补丁包会在下次打开APP的时候生效。
 }
 
 - (void)readSettingValue {
