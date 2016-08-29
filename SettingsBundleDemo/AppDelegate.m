@@ -41,12 +41,10 @@
 
 - (void)setUpJSPatch {
 
-  //这个是用来做条件下发的
-  [JSPatch setupUserData:@{ @"userId" : @"10000" }];
-  NSString *kJSPatchAppKey = @"c15ed4b765732ec0";
-  [JSPatch startWithAppKey:kJSPatchAppKey];
-
-  //用来检测回调的状态，是更新或者是执行脚本之类的，相关信息，会打印在你的控制台
+  /* 用来检测回调的状态，是更新或者是执行脚本之类的，相关信息，会打印在你的控制台
+    在 `+startWithAppKey:` 之前调用
+   */
+    
   [JSPatch
       setupCallback:^(JPCallbackType type, NSDictionary *data, NSError *error) {
 
@@ -73,11 +71,17 @@
         }
       }];
 
+  //这个是用来做条件下发的
+  [JSPatch setupUserData:@{ @"userId" : @"10000" }];
+  NSString *kJSPatchAppKey = @"c15ed4b765732ec0";
+  [JSPatch startWithAppKey:kJSPatchAppKey];
+
 #ifdef DEBUG
   [JSPatch setupDevelopment];
 #endif
 
   [JSPatch sync]; // 每调用一次 +sync 就会请求一次后台，请求下发最新补丁包，但是新的补丁包会在下次打开APP的时候生效。
+    
 }
 
 - (void)readSettingValue {
