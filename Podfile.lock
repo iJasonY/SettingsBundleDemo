@@ -1,10 +1,15 @@
 PODS:
   - Bugly (2.4.0)
+  - JSPatchPlatform (1.6.1):
+    - JSPatchPlatform/Core (= 1.6.1)
+  - JSPatchPlatform/Core (1.6.1)
 
 DEPENDENCIES:
   - Bugly
+  - JSPatchPlatform
 
 SPEC CHECKSUMS:
   Bugly: 3b56d8365c5687f74fd6fbb50c5b7ede3cdac96c
+  JSPatchPlatform: 35ec095f8776340cca1d57ce35661e7f79211ad2
 
 COCOAPODS: 0.39.0

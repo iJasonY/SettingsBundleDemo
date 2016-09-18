@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Bugly/Bugly.h>
-#import <JSPatch/JSPatch.h>
+#import <JSPatchPlatform/JSPatch.h>
 
 @interface AppDelegate ()
 
