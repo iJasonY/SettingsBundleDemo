@@ -172,6 +172,8 @@
 				TargetAttributes = {
 					1A44D4FF19F7D5A700593002 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = QFKZ28YJ53;
+						ProvisioningStyle = Manual;
 					};
 					1A44D51819F7D5A700593002 = {
 						CreatedOnToolsVersion = 6.1;
@@ -366,9 +368,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QFKZ28YJ53;
 				INFOPLIST_FILE = SettingsBundleDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ijason.SettingsBundleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2d35058c-b897-49aa-ad35-eee5fd1b54d0";
+				PROVISIONING_PROFILE_SPECIFIER = fastlaneDemo;
 			};
 			name = Debug;
 		};
@@ -376,9 +382,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QFKZ28YJ53;
 				INFOPLIST_FILE = SettingsBundleDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ijason.SettingsBundleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2d35058c-b897-49aa-ad35-eee5fd1b54d0";
+				PROVISIONING_PROFILE_SPECIFIER = fastlaneDemo;
 			};
 			name = Release;
 		};
@@ -435,6 +446,7 @@
 				1A44D52519F7D5A700593002 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A44D52619F7D5A700593002 /* Build configuration list for PBXNativeTarget "SettingsBundleDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +455,7 @@
 				1A44D52819F7D5A700593002 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
