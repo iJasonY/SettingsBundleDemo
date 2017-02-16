@@ -49,7 +49,7 @@ platform :ios do
 
   lane :to_build do
     # 如果你用 pod install
-    cocoapods
+    # cocoapods
     # 如果你没有申请adhoc证书，sigh会自动帮你申请，并且添加到Xcode里
     sigh(development: true)
     # 以下两个action来自fastlane-plugin-versioning，
